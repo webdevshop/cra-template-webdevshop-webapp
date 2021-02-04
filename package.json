@@ -25,6 +25,7 @@
       "path": "cz-conventional-changelog"
     }
   },
+  "yo": "d",
   "keywords": [
     "react",
     "create-react-app",
