@@ -4,7 +4,8 @@
   "scripts": {
     "commit": "cz",
     "setup": "semantic-release-cli setup",
-    "publish": "semantic-release --no-ci --branches master"
+    "publish": "semantic-release --no-ci --branches master",
+    "standard": "standard-version"
   },
   "release": {
     "branches": [
@@ -49,6 +50,7 @@
     "conventional-changelog-conventionalcommits": "^4.5.0",
     "cz-conventional-changelog": "^3.3.0",
     "semantic-release": "^17.3.7",
-    "semantic-release-cli": "^5.4.3"
+    "semantic-release-cli": "^5.4.3",
+    "standard-version": "^9.1.0"
   }
 }
