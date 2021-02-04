@@ -2,6 +2,7 @@
   "name": "cra-template-webdevshop-webapp",
   "version": "1.0.0",
   "scripts": {
+    "commit": "cz",
     "setup": "semantic-release-cli setup",
     "publish": "semantic-release --no-ci --branches master"
   },
@@ -10,9 +11,12 @@
       "master"
     ],
     "plugins": [
-      ["@semantic-release/commit-analyzer", {
-        "preset": "conventionalcommits"
-      }]
+      [
+        "@semantic-release/commit-analyzer",
+        {
+          "preset": "conventionalcommits"
+        }
+      ]
     ]
   },
   "config": {
@@ -42,6 +46,7 @@
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^8.0.1",
     "commitizen": "^4.2.3",
+    "conventional-changelog-conventionalcommits": "^4.5.0",
     "cz-conventional-changelog": "^3.3.0",
     "semantic-release": "^17.3.7",
     "semantic-release-cli": "^5.4.3"
