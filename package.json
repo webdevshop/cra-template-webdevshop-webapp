@@ -1,9 +1,19 @@
 {
-  "name": "cra-template-typescript",
-  "version": "0.0.0",
+  "name": "cra-template-webdevshop-webapp",
+  "version": "1.0.0",
   "scripts": {
     "setup": "semantic-release-cli setup",
-    "semantic-release": "semantic-release --no-ci"
+    "publish": "semantic-release --no-ci --branches master"
+  },
+  "release": {
+    "branches": [
+      "master"
+    ],
+    "plugins": [
+      ["@semantic-release/commit-analyzer", {
+        "preset": "conventionalcommits"
+      }]
+    ]
   },
   "config": {
     "commitizen": {
@@ -19,8 +29,7 @@
   "description": "The base TypeScript template for Create React App.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wevdevshop/cra-template-webdevshop-webapp.git",
-    "directory": "packages/cra-template-typescript"
+    "url": "https://github.com/webdevshop/cra-template-webdevshop-webapp.git"
   },
   "license": "MIT",
   "engines": {
@@ -31,6 +40,7 @@
     "template.json"
   ],
   "devDependencies": {
+    "@semantic-release/commit-analyzer": "^8.0.1",
     "commitizen": "^4.2.3",
     "cz-conventional-changelog": "^3.3.0",
     "semantic-release": "^17.3.7",

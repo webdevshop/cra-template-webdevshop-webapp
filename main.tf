@@ -1,7 +1,7 @@
 terraform {
   backend "gcs" {
-    bucket  = var.BACKEND_BUCKET
-    prefix  = var.PROJECT_NAME
+    bucket  = "webdevshop-terraform-state"
+    prefix  = "cra-template-webdevshop-webapp"
   }
   required_providers {
     github = {
